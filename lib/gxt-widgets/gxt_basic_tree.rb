@@ -10,6 +10,10 @@ module GxtWidgets
       self.gxt_basic_tree_elements(:xpath=>child_xpath)
     end
 
+    def child_nodes_2
+      self.gxt_basic_tree_elements(:xpath=>child_divs)
+    end
+
     def name
       node_contents.span_element(:class=>"x-tree3-node-text").text
     end
@@ -33,7 +37,6 @@ module GxtWidgets
        self.node_container.visible?
     end
 
-
     def collapse
       joint.click unless self.collapsed?
     end
@@ -42,19 +45,23 @@ module GxtWidgets
       !self.node_container.visible?
     end
 
-
-
     def node_contents
       self.div_element(:xpath=>".//div[contains(@class,'x-tree3-el')]")
+      # self.div_element(:xpath=>".//div[contains(@class,'gwt-TreeItem')]")
     end
 
     def node_container
       self.div_element(:xpath=>".//div[contains(@class,'x-tree3-node-ct')]")
     end
 
+    def child_divs
+      ".//child::div//child::div"
+    end
+
     @protected
     def child_xpath
       ".//child::div[contains(@class,'x-tree3-node')]"
     end
+
   end
 end
