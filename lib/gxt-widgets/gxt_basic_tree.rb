@@ -10,6 +10,10 @@ module GxtWidgets
       self.gxt_basic_tree_elements(:xpath=>child_node_xpath)
     end
 
+    def child_leaves
+      self.gxt_basic_tree_elements(:xpath=>child_leaf_xpath)
+    end
+
     def name
       node_contents.span_element(:class=>"x-tree3-node-text").text
     end
@@ -21,6 +25,13 @@ module GxtWidgets
       child_nodes[node_index]
     end
 
+    def leaf(leaf_name)
+      leaf_index = child_leaves.find_index do |leaf|
+        leaf.name == leaf_name
+      end
+      child_leaves[leaf_index]
+    end
+
     def joint
       # node_contents.image_element(:xpath=>".//*[ancestor::tr//img[1]]")
       node_contents.image_element(:xpath=> "ancestor-or-self::tr[1]//img[1]")
@@ -28,7 +39,6 @@ module GxtWidgets
 
     def expand
       joint.click unless self.expanded?
-      # joint.click
     end
 
     def expanded?
@@ -37,7 +47,6 @@ module GxtWidgets
 
     def collapse
       joint.click unless self.collapsed?
-      # joint.click
     end
 
     def collapsed?
@@ -62,7 +71,7 @@ module GxtWidgets
     end
 
     def child_leaf_xpath
-      ".//child::div[containts(@class, 'x-tree3-el')]"
+      ".//table/following::div[1]/div"
     end
   end
 end
