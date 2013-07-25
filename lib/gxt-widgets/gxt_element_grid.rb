@@ -4,7 +4,7 @@ require 'gxt-widgets/row_container'
 module GxtWidgets
   class GxtElementGrid < GxtWidgets::GxtGrid
 
-    PageObject.register_widget :gxt_element_grid, GxtGrid, 'div'
+    PageObject.register_widget :gxt_element_grid, GxtElementGrid, 'div'
 
     def initialize_header(header_element, platform)
       Object::GxtWidgets::GxtGridElementHeaderRow.new(header_element, self, platform)
