@@ -6,7 +6,7 @@ module GxtWidgets
 
     PageObject.register_widget :gxt_element_grid, GxtElementGrid, 'div'
 
-    def initialize_header(header_element, platform)
+    def initialize_row(header_element, platform)
       Object::GxtWidgets::GxtGridElementHeaderRow.new(header_element, self, platform)
     end
   end
