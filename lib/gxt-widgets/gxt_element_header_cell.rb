@@ -8,5 +8,9 @@ module GxtWidgets
     def select_box_element
       select_list_element(:index=>0)
     end
+
+    def pdf_element
+      img_element(:index=>0)
+    end
   end
 end
