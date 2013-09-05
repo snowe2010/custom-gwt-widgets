@@ -1,4 +1,4 @@
-class GwtWidgets::DialogBox < PageObject::Elements::Div
+class GxtWidgets::DialogBox < PageObject::Elements::Div
 
   def caption
     div_element(:class => 'Caption').text

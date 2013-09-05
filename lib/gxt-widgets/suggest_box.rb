@@ -1,4 +1,4 @@
-class GwtWidgets::SuggestBox < PageObject::Elements::TextField
+class GxtWidgets::SuggestBox < PageObject::Elements::TextField
 
   def self.accessor_methods(accessor, name)
     accessor.send :define_method, "#{name}" do

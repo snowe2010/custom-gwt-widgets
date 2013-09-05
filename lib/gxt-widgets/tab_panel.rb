@@ -1,4 +1,4 @@
-class GwtWidgets::TabPanel < PageObject::Elements::Div
+class GxtWidgets::TabPanel < PageObject::Elements::Div
 
   def select(label)
     div_element(:class => 'gwt-TabLayoutPanelTab', :text => label).click

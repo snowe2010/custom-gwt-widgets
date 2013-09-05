@@ -1,4 +1,4 @@
-class GwtWidgets::StackPanel < PageObject::Elements::Table
+class GxtWidgets::StackPanel < PageObject::Elements::Table
 
     def select(label)
       div_element(:class => 'cw-StackPanelHeader', :text => label).click

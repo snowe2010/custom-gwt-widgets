@@ -5,6 +5,10 @@ module GxtWidgets
       text_field_element(:index=>0)
     end
 
+    def text_box= (text)
+      text_box_element= text
+    end
+
     def select_box_element
       select_list_element(:index=>0)
     end

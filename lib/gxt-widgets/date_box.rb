@@ -1,4 +1,4 @@
-class GwtWidgets::DateBox < PageObject::Elements::Table
+class GxtWidgets::DateBox < PageObject::Elements::Table
 
   def input
     require 'pry'; binding.pry;

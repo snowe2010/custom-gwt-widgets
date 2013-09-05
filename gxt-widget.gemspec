@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.name = "gxt-widgets"
   s.version = GxtWidgets::VERSION
   s.platform = Gem::Platform::RUBY
-  s.authors = ["William J. Powell", "Jeff Morgan"]
-  s.email = ["williamjpowell@gmail.com", "jeff.morgan@leandog.com"]
+  s.authors = ["William J. Powell", "Jeff Morgan", "Tyler Thrailkill"]
+  s.email = ["williamjpowell@gmail.com", "jeff.morgan@leandog.com", "tyler.thrailkill@recondotech.com"]
   s.homepage = "http://github.com/wjpowell/gxt-widgets"
   s.summary = %q{PageObject Widgets to simplify testing GXT applications}
   s.description = %q{An Extension to page-object gem which provides widgets for interacting with GXT controls found on the Gxt Example Gallery http://gxtexamplegallery.appspot.com/}

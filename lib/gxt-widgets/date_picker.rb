@@ -1,4 +1,4 @@
-class GwtWidgets::DatePicker < PageObject::Elements::Table
+class GxtWidgets::DatePicker < PageObject::Elements::Table
 
   def choose_day (day)
     days_this_month[day.to_i - 1].click
