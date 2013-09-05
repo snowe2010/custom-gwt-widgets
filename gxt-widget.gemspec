@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors = ["William J. Powell", "Jeff Morgan", "Tyler Thrailkill"]
   s.email = ["williamjpowell@gmail.com", "jeff.morgan@leandog.com", "tyler.thrailkill@recondotech.com"]
   s.homepage = "http://github.com/snowe2010/recondo-gwt-widgets"
-  s.summary = %q{PageObject Widgets to simplify testing GXT applications}
-  s.description = %q{An Extension to page-object gem which provides widgets for interacting with GXT controls found on the Gxt Example Gallery http://gxtexamplegallery.appspot.com/}
+  s.summary = %q{PageObject Widgets to simplify testing Recondo's Portal}
+  s.description = %q{A modification of William Powell's gxt-widgets gem for Recondo's portal. This adds support for Recondo's MutableDataGrid and CommonVisitTree (and most likely any other trees) to the page-object gem. }
 
   # s.rubyforge_project = "gxt-widgets"
 
