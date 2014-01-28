@@ -15,7 +15,7 @@ module GxtWidgets
     end
 
     def name
-      node_contents.span_element(:class=>"x-tree3-node-text").text
+      node_contents.span_element(index: 0).text
     end
 
     def node(node_name)
@@ -67,7 +67,8 @@ module GxtWidgets
     @protected
     #this is correct?
     def child_node_xpath
-      ".//child::div[contains(@class,'x-tree3-node')]"
+      # "./table/following::div[1]/div"
+      './child::*[not(position() = 1)]'
     end
 
     def child_leaf_xpath
